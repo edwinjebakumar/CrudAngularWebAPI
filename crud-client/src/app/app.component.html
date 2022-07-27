@@ -1,0 +1,19 @@
+<table>
+  <th>ID</th>
+  <th>INVOICENUMBER</th>
+  <th>CUSTOMERNUMBER</th>
+  <th>INVOICEDT</th>
+  <th>AMOUNT</th>
+  <th>VOIDFLAG</th>
+  <tr *ngFor="let item of invList">
+    <td>{{item.id}}</td>
+    <td>{{item.invNumber}}</td>
+    <td>{{item.custNumber}}</td>
+    <td>{{item.invDt}}</td>
+    <td>{{item.amount}}</td>
+    <td>{{item.voidFlag}}</td>
+
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
